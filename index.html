@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>croisenna.co — Croissants &amp; pastry</title>
+<meta name="description" content="croisenna.co bakes laminated croissants and pastries every morning. Browse the menu and order for pickup.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥐</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <a href="#top" class="logo">croisenna.co</a>
+  <nav class="nav__links" id="navLinks" aria-label="Main">
+    <a href="#menu">Menu</a>
+    <a href="#craft">Our Craft</a>
+    <a href="#locations">Locations</a>
+    <a href="#journal">Journal</a>
+  </nav>
+  <div class="nav__actions">
+    <button class="order-pill" id="orderPill" type="button" aria-label="Pickup order items">Order · <span id="orderCount">0</span></button>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__stage">
+      <h1 class="hero__word">croisenna.co</h1>
+      <img class="hero__croissant" src="5.png" alt="A warm croissant with steam rising" width="1299" height="1014">
+    </div>
+    <div class="hero__row">
+      <div>
+        <p class="hero__lead">Laminated by hand,<br>baked at dawn.</p>
+        <p class="hero__copy">Butter croissants and filled pastries, made fresh every morning in Caloocan. Order ahead and pick up warm.</p>
+        <div class="hero__cta">
+          <a href="#menu" class="btn btn--solid">View Menu</a>
+          <a href="#craft" class="btn btn--line">See how we bake</a>
+        </div>
+      </div>
+      <figure class="hero__media">
+        <img src="1.png" alt="A tray of glossy, deeply baked croissants in the display case" width="1200" height="680">
+        <figcaption>First tray, out at 6:40</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="section-head">
+      <h2>The morning menu</h2>
+      <div class="tabs" role="tablist" aria-label="Filter menu">
+        <button class="tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="classic">Classic</button>
+        <button class="tab" role="tab" aria-selected="false" data-filter="special">Special Editions</button>
+      </div>
+    </div>
+    <div class="grid" id="grid">
+      <article class="card" data-category="classic">
+        <div class="card__img"><img src="5.png" alt="Classic hot croissant with steam rising" loading="lazy"></div>
+        <div class="card__body">
+          <h3>Classic Hot Croissant</h3>
+          <p>Cultured butter, crisp shell, honeycomb crumb. Served warm.</p>
+          <div class="card__foot"><span class="price">₱95</span><span class="tag-badge">Fresh Daily</span></div>
+          <button class="add" type="button">Add to order</button>
+        </div>
+      </article>
+      <article class="card" data-category="special">
+        <div class="card__img"><img src="2.png" alt="Croissant glazed with strawberry compote" loading="lazy"></div>
+        <div class="card__body">
+          <h3>Strawberry Compote Croissant</h3>
+          <p>Slow-cooked strawberries over a butter croissant. Seasonal.</p>
+          <div class="card__foot"><span class="price">₱140</span><span class="tag-badge">Limited</span></div>
+          <button class="add" type="button">Add to order</button>
+        </div>
+      </article>
+      <article class="card" data-category="special">
+        <div class="card__img"><img src="3.png" alt="Croissant with matcha pistachio glaze" loading="lazy"></div>
+        <div class="card__body">
+          <h3>Matcha Pistachio Glazed Croissant</h3>
+          <p>Ceremonial matcha and pistachio glaze, white chocolate stripes.</p>
+          <div class="card__foot"><span class="price">₱150</span><span class="tag-badge">Special</span></div>
+          <button class="add" type="button">Add to order</button>
+        </div>
+      </article>
+      <article class="card" data-category="classic">
+        <div class="card__img"><img src="4.png" alt="Croissant with dark chocolate drizzle" loading="lazy"></div>
+        <div class="card__body">
+          <h3>Double Dark Chocolate Croissant</h3>
+          <p>Dark chocolate baked inside, dark chocolate poured on top.</p>
+          <div class="card__foot"><span class="price">₱135</span><span class="tag-badge">Classic</span></div>
+          <button class="add" type="button">Add to order</button>
+        </div>
+      </article>
+      <article class="card" data-category="special">
+        <div class="card__img"><img class="photo" src="1_1.png" alt="Pistachio Cream Croissant" loading="lazy"></div>
+        <div class="card__body">
+          <h3>Pistachio Cream Croissant</h3>
+          <p>Rich pistachio cream, crushed nuts and a crisp butter shell.</p>
+          <div class="card__foot"><span class="price">₱160</span><span class="tag-badge">Signature</span></div>
+          <button class="add" type="button">Add to order</button>
+        </div>
+      </article>
+      <article class="card" data-category="classic">
+        <div class="card__img"><img src="3_1.png" alt="Croissant on a wooden plate with coffee" loading="lazy"></div>
+        <div class="card__body">
+          <h3>Croissant &amp; Coffee Set</h3>
+          <p>A classic croissant with a hot cup of coffee and caramel on the side.</p>
+          <div class="card__foot"><span class="price">₱180</span><span class="tag-badge">Morning Set</span></div>
+          <button class="add" type="button">Add to order</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Our craft -->
+  <section class="craft" id="craft">
+    <h2>Our craft</h2>
+    <ol class="steps">
+      <li><h3>Day one: mix and rest</h3><p>Dough is mixed, chilled and left to ferment overnight for flavor.</p></li>
+      <li><h3>Day two: fold and shape</h3><p>Butter is folded in by hand, rolled, cut and proofed until it wobbles.</p></li>
+      <li><h3>Day three: bake</h3><p>Trays go in at five, so the first croissants are ready by seven.</p></li>
+    </ol>
+  </section>
+
+  <!-- Locations -->
+  <section class="locations" id="locations">
+    <h2>Find us</h2>
+    <div class="locs">
+      <div><h3>Caloocan Flagship</h3><p>14 Rizal Avenue Extension<br>Daily, 7:00 am to 7:00 pm</p></div>
+      <div><h3>Quezon City Counter</h3><p>22 Maginhawa Street<br>Daily, 7:30 am to 6:00 pm</p></div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="journal" id="journal">
+    <div class="journal__text">
+      <h2>The weekly bake note</h2>
+      <p>One short email each Friday: what's new on the menu, and when the next limited batch lands.</p>
+    </div>
+    <form class="news" id="newsForm" novalidate>
+      <label for="email">Email address</label>
+      <div class="news__row">
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" aria-describedby="newsMsg">
+        <button type="submit" class="btn btn--solid">Subscribe</button>
+      </div>
+      <p class="news__msg" id="newsMsg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<!-- Closing band featuring stacked croissants and dark chocolate drizzle -->
+<section class="closing">
+  <img class="closing__l" src="2_1.png" alt="Stacked golden croissants">
+  <div>
+    <p class="closing__text">Fresh out<br>at seven.</p>
+    <a href="#menu" class="btn btn--solid">Browse Menu</a>
+  </div>
+  <img class="closing__r" src="4.png" alt="Chocolate croissant splash">
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer__word" aria-hidden="true">croisenna.co</div>
+  <p>© 2026 croisenna.co Boulangerie. Baked fresh daily.</p>
+</footer>
+
+<!-- Toast notification -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
